@@ -21,7 +21,7 @@
 7) 	Enable SSH on LAN
 8)  Login with (Bitvice xterm) or simple Windows Terminal (ssh root@192.168.1.3)
 9)  Edit the file: 
-		nano /u-boot/config.txt
+		`nano /u-boot/config.txt`
 	  append at the end of the file:
 	```
 	  dtoverlay=spi1-3cs
@@ -66,9 +66,9 @@
 
 finish
 
-[!NOTE]
-The RPI Venus Carrier has been tested with my old single can version of the carrier board with temporarily soldered a second little Waveshare RS485 CAN HAT to SPI1-0. See picture.
-Final Version will have mcp2518FD on board and requires different overlay and setting in config.txt.
+> [!NOTE]
+> The RPI Venus Carrier has been tested with my old single can version of the carrier board with temporarily soldered a second little Waveshare RS485 CAN HAT to SPI1-0. See picture.
+> Final Version will have mcp2518FD on board and requires different overlay and setting in config.txt.
 
 By trial and error I found that dtoverlay=spi1-1cs is for some reason not working (which uses only CS-GPIOpin18). Interface can1 is only recognized with spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more.
 Digital I/O's are not working by just update the gpio_list. Yust updating the gpio_list makes only the relais working. In this case assigned to GPIO2 and GPIO3.
