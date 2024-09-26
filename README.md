@@ -86,4 +86,5 @@ All settings are retained after a Firmware update, except the Anlaog Inputs. To 
 - copy and override the file "dbus-adc.conf" in /etc/venus again.
 finish
 
+<!-- TO DO: add more details about me later -->
 Still need to figure out how to retain the Analog Inputs after Firmware update :)
