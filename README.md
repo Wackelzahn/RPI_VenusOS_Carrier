@@ -86,5 +86,8 @@ All settings are retained after a Firmware update, except the Anlaog Inputs. To 
 - copy and override the file "dbus-adc.conf" in /etc/venus again.
 finish
 
-<!-- TO DO: add more details about me later -->
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
 Still need to figure out how to retain the Analog Inputs after Firmware update :)
