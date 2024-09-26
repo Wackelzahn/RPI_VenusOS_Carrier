@@ -42,12 +42,12 @@
 	SetupHelper
 	-------------
 	having root access through SHL or WinCP, 
-	a) Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
-	b) Copy this tar file via WinCP/Bitvise to /home/root destination
-	c) Untar like this from /home/root tar -xzf ./SetupHelper-latest.tar.gz -C /data
-	d) mv /data/SetupHelper-latest /data/SetupHelper
-	e) run the setup: /data/SetupHelper/setup
-	f) confirm (i) for install and activate, confirm "y" to restart the GUI
+	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
+	- Copy this tar file via WinCP/Bitvise to /home/root destination
+	- Untar like this from /home/root tar -xzf ./SetupHelper-latest.tar.gz -C /data
+	- mv /data/SetupHelper-latest /data/SetupHelper
+	- run the setup: /data/SetupHelper/setup
+	- confirm (i) for install and activate, confirm "y" to restart the GUI
 
 14)	Proceed with the installation of RpiGpioSetup
 
