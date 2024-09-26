@@ -1,6 +1,8 @@
 # Raspberry Pi 4b Venus OS Carrier
 
-
+* {
+    font-family: "Iosevka";
+}
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
 2)	Put it into Raspi
