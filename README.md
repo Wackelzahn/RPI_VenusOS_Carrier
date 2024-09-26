@@ -77,7 +77,7 @@ Digital I/O's are not working by just update the gpio_list. Yust updating the gp
 Digital Inputs need a custom overlay. The overlay provided in RpiGpioSetup is assigning Gpio16 and GPIO19 which collides with can1 interface preventing can1 to run. 
 That is why a custom "VenusGpioOverlay.dtbo" was compiled and the original overlay needs to be replaced during the installation process of RpiGpioSetup (In this case Input pin assignements for 16, 19 and 26 was removed in the overlay).
 
-
+<!-- COMMENT -->
 
 retaining settings after Firmware update
 ----------------------------------------
