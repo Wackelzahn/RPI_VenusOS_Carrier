@@ -1,8 +1,6 @@
 # Raspberry Pi 4b Venus OS Carrier
 
-* {
-    font-family: "Iosevka";
-}
+
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
 2)	Put it into Raspi
@@ -53,7 +51,7 @@
 
 14)	Proceed with the installation of RpiGpioSetup
 
-	RpiGpioSetup
+	RpiGpioSetup[^1]
 	--------------
 	a) In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	b) Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
@@ -78,6 +76,7 @@ Digital Inputs need a custom overlay. The overlay provided in RpiGpioSetup is as
 That is why a custom "VenusGpioOverlay.dtbo" was compiled and the original overlay needs to be replaced during the installation process of RpiGpioSetup (In this case Input pin assignements for 16, 19 and 26 was removed in the overlay).
 
 <!-- COMMENT -->
+<!-- TO DO: add more details about me later -->
 
 retaining settings after Firmware update
 ----------------------------------------
@@ -91,3 +90,5 @@ finish
 - [ ] Add delight to the experience when all tasks are complete :tada:
 
 Still need to figure out how to retain the Analog Inputs after Firmware update :)
+
+[^1]: https://github.com/kwindrem/RpiGpioSetup
