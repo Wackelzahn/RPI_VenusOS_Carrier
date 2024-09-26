@@ -66,10 +66,7 @@
 
 finish
 
-
 [!NOTE]
--------
-
 The RPI Venus Carrier has been tested with my old single can version of the carrier board with temporarily soldered a second little Waveshare RS485 CAN HAT to SPI1-0. See picture.
 Final Version will have mcp2518FD on board and requires different overlay and setting in config.txt.
 
