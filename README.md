@@ -12,10 +12,10 @@
 5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
-   >  IP 192.168.1.3  
-   >  netmask	255.255.255.0  
-   >  Gateway	192.168.1.1  
-   >   Nameserver	192.168.1.1   
+   >  IP    192.168.1.3  
+   >  netmask	  255.255.255.0  
+   >  Gateway	  192.168.1.1  
+   >   Nameserver	  192.168.1.1   
 
 7)	Connect remote from your computer by typing into your browser (example):
 	  `http://192.168.1.3/`
@@ -45,7 +45,11 @@
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
 	- Copy this tar file via WinCP/Bitvise to /home/root destination
-	- Untar like this from /home/root tar -xzf ./SetupHelper-latest.tar.gz -C /data  
+	- Untar from `/home/root`
+  ```
+tar -xzf ./SetupHelper-latest.tar.gz -C /data
+```
+ - move
 	  ```
    		mv /data/SetupHelper-latest /data/SetupHelper
    		```  
