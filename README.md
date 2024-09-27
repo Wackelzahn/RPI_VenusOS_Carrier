@@ -13,9 +13,9 @@
 4) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
-   >  IP   &nbsp;&nbsp; 192.168.1.3  
-   >  netmask	  255.255.255.0  
-   >  Gateway	  192.168.1.1  
+   >  IP   &nbsp;&nbsp;&nbsp;&nbsp; 192.168.1.3  
+   >  netmask	&nbsp;  255.255.255.0  
+   >  Gateway	&nbsp;  192.168.1.1  
    >   Nameserver	  192.168.1.1   
 
 7)	Connect remote from your computer by typing into your browser (example):
