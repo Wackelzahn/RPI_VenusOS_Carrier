@@ -63,14 +63,14 @@
      
  	  move  
 	  ```
-   	   mv /data/SetupHelper-latest /data/SetupHelper  
+          mv /data/SetupHelper-latest /data/SetupHelper  
 	  ```  
    
    	  run the setup:  
 	  ```
           /data/SetupHelper/setup  
    	  ```  
-	  confirm (i) for install and activate, confirm "y" to restart the GUI
+	  confirm (i) for install and activate, confirm "y" to restart the GUI  
 
 15)	Proceed with the installation of **RpiGpioSetup[^3]**
 
