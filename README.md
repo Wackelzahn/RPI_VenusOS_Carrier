@@ -70,7 +70,7 @@
 	  ```
           /data/SetupHelper/setup  
    	  ```  
-	- confirm (i) for install and activate, confirm "y" to restart the GUI
+	  confirm (i) for install and activate, confirm "y" to restart the GUI
 
 15)	Proceed with the installation of **RpiGpioSetup[^3]**
 
