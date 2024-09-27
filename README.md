@@ -1,6 +1,6 @@
 # Raspberry Pi 4b Venus OS Carrier
 
-
+## Configuration
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
 2)	Put it into Raspi
@@ -78,13 +78,15 @@ That is why a custom "VenusGpioOverlay.dtbo" was compiled and the original overl
 <!-- COMMENT -->
 <!-- TO DO: add more details about me later -->
 
-retaining settings after Firmware update
-----------------------------------------
+## Retaining settings after Firmware update
+-------------------------------------------
 All settings are retained after a Firmware update, except the Anlaog Inputs. To be re-installed like above 
 - add the line "dtoverlay=mcp3208:spi0-1-present" to config.txt again.
 - copy and override the file "dbus-adc.conf" in /etc/venus again.
 finish
 
+## ToDo
+---------------------------------
 - [x] #739
 - [ ] https://github.com/octo-org/octo-repo/issues/740
 - [ ] Add delight to the experience when all tasks are complete :tada:
