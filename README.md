@@ -30,11 +30,11 @@
 8) 	Enable SSH on LAN
 9)  Login with a Terminal 'ssh root@192.168.1.3' (e.g. https://bitvise.com/)
 10)  Edit the file config.txt:  
-    ```  
-    nano /u-boot/config.txt  
-    ```
+     ```  
+     nano /u-boot/config.txt  
+     ```
      append at the end of the file:    
-    ```
+     ```  
 	  dtoverlay=spi1-3cs
 	  dtoverlay=mcp2515,spi1-0,oscillator=12000000,speed=2000000,interrupt=24
 	  dtoverlay=mcp2515,spi0-0,oscillator=12000000,speed=2000000,interrupt=25
