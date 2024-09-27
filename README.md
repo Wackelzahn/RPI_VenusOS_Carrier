@@ -22,13 +22,13 @@
    >  Gateway	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -192.168.1.1  
    >   Nameserver	  -192.168.1.1   
 
-7)	Connect remote from your computer by typing into your browser (example):
+5)	Connect remote from your computer by typing into your browser (example):
 	  `http://192.168.1.3/`
-5)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
-6)	Set root (Superuser) Password!
-7) 	Enable SSH on LAN
-8)  Login with a Terminal 'ssh root@192.168.1.3' (e.g. https://bitvise.com/)
-9)  Edit the file config.txt:  
+6)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
+7)	Set root (Superuser) Password!
+8) 	Enable SSH on LAN
+9)  Login with a Terminal 'ssh root@192.168.1.3' (e.g. https://bitvise.com/)
+10)  Edit the file config.txt:  
     ```  
     nano /u-boot/config.txt  
     ```
@@ -46,7 +46,7 @@
     ```
     reboot
     ```  
-14) Reconnect via ssh. Check with the command if both can0 and can1 are running.
+13) Reconnect via ssh. Check with the command if both can0 and can1 are running.
       ```
       dmesg | grep can
       ```  
@@ -54,7 +54,7 @@
 	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.  
          Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.  
         Picture [Front...](Pictures/Test_Carrier_Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
-15)	Proceed with the installation of **SetupHelper[^2]**
+14)	Proceed with the installation of **SetupHelper[^2]**
   
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz (e.g. to your Laptop)
@@ -75,7 +75,7 @@
    	  ```
 	  confirm (i) for install and activate, confirm "y" to restart the GUI  
 
-16)	Proceed with the installation of **RpiGpioSetup[^3]**
+15)	Proceed with the installation of **RpiGpioSetup[^3]**
 
 	- In the GUI, go to "Settings", "Package Manager"and "Inactive Packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active Packages" and "RpiGpioSetup", download and proceed but do not install!
@@ -91,7 +91,7 @@
       Install and activate (i), choose (n) to not install the alternate GPIO assignement.   
 	  confirm (y) to reboot the system  
 		
-17) Install "RpiTemperature", through SetupHelper.
+16) Install "RpiTemperature", through SetupHelper.
 
 **finish**
 ##
