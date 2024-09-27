@@ -80,8 +80,9 @@
 	  Confirm the "overwrite".  
 	- Copy the file `VenusGpioOverlay.dtbo` [right click, save link as...](Files/VenusGpioOverlay.dtbo) to `/data/RpiGpioSetup/FileSets/VersionIndependent`.  
 	  Confirm the "overwrite".
+   
 	- run setup of RpiGpioSetup  
-	  ```
+	  ```  
  	  /data/RpiGpioSetup/setup
  	  ```  
         - install and activate (i)  
