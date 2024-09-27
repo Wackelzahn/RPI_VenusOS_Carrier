@@ -27,8 +27,8 @@
 9)  Edit the file config.txt:  
 	```  
  	  nano /u-boot/config.txt  
- 	  ```  
-   - append at the end of the file:    
+ 	  ```
+ 		  append at the end of the file:    
 	  ```
 	  dtoverlay=spi1-3cs
 	  dtoverlay=mcp2515,spi1-0,oscillator=12000000,speed=2000000,interrupt=24
