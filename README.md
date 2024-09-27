@@ -1,4 +1,8 @@
-# Raspberry Pi 4b Venus OS Carrier
+# Rpi_4b_Venus_OS_Carrier
+
+> [!WARNING]
+> All files provided in the Rep were tested to work with the Rpi_4b_Venus_OS_Carrier (Testversion). 
+> They may not work in other HW environments.
 
 ## Configuration
 
@@ -20,8 +24,8 @@
 
 7)	Connect remote from your computer by typing into your browser (example):
 	  `http://192.168.1.3/`
-5)	In the Venus OS GUI go to SETTINGS, GENERAL, ACCESS LEVEL and (press long time right arrow) to enter SUPERUSER
-6)	Set root (Superuser) Password, e.g. roots1
+5)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
+6)	Set root (Superuser) Password!
 7) 	Enable SSH on LAN
 8)  Login with a Terminal 'ssh root@192.168.1.3' (e.g. https://bitvise.com/)
 9)  Edit the file config.txt:  
@@ -70,9 +74,9 @@
 
 15)	Proceed with the installation of **RpiGpioSetup[^3]**
 
-	- In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
-	- Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
-	- Copy (e.g. Bitvise SFTP) the (to your like) modified file "gpio_list" to /data/RpiGpioSetup/FileSets. confirm the "overwrite".
+	- In the GUI, go to "Settings", "Package Manager"and "Inactive Packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
+	- Go one step back and go to "Active Packages" and "RpiGpioSetup", download and proceed but do not install!
+	- Copy the modified file "gpio_list" to /data/RpiGpioSetup/FileSets. confirm the "overwrite".
 	- Copy the file "VenusGpioOverlay.dtbo" (personal modified version) to /data/RpiGpioSetup/FileSets/VersionIndependent. Confirm the "overwrite".
 	- run setup of RpiGpioSetup -> /data/RpiGpioSetup/setup
       install and activate (i)
