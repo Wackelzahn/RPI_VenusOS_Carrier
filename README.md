@@ -10,7 +10,8 @@
 	
 4)  Remove the SD card and stick it into the RPI. Power-up.
 5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI
-   
+   |Descr|Addr|
+   |----|-----|
    |IP |192.168.1.3|  
    |netmask	|255.255.255.0|  
    |Gateway	|192.168.1.1|  
