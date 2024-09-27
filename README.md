@@ -81,12 +81,11 @@
 	- Copy the file `VenusGpioOverlay.dtbo` [right click, save link as...](Files/VenusGpioOverlay.dtbo) to `/data/RpiGpioSetup/FileSets/VersionIndependent`.  
 	  Confirm the "overwrite".
    
-	- run setup of RpiGpioSetup  
+	- Run setup of RpiGpioSetup  
 	  ```  
  	  /data/RpiGpioSetup/setup
  	  ```  
-        - install and activate (i)  
-	  choose (n) to not install the alternate GPIO assignement  
+       - Install and activate (i), choose (n) to not install the alternate GPIO assignement.   
 	  confirm (y) to reboot the system  
 		
 16) Install "RpiTemperature", through SetupHelper.
