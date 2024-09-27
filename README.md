@@ -24,8 +24,10 @@
 6)	Set root (Superuser) Password, e.g. roots1
 7) 	Enable SSH on LAN
 8)  Login with a Terminal 'ssh root@192.168.1.3' (e.g. https://bitvise.com/)
-9)  Edit the file: 
-		`nano /u-boot/config.txt`
+9)  Edit the file config.txt: 
+        ```
+    	nano /u-boot/config.txt
+    	```
 	  append at the end of the file:
 	```
 	  dtoverlay=spi1-3cs
@@ -35,9 +37,9 @@
 	```
 	  end the editor with "Ctrl+x" and confirm "y" to safe the file.
 	
-10) Copy the file "dbus-adc.conf" [right click, save link as...](Files/dbus-adc.conf) to RPI /etc/venus with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
-11) Reboot RPI by entering the command "reboot".
-12) Reconnect via ssh. Check with the command
+11) Copy the file `dbus-adc.conf` [right click, save link as...](Files/dbus-adc.conf) to RPI /etc/venus with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
+12) Reboot RPI by entering the command "reboot".
+13) Reconnect via ssh. Check with the command
       ```
       dmesg | grep can
       ```
