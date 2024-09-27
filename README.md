@@ -79,10 +79,10 @@
 	- Copy the the file `gpio_list` [right click, save link as...](Files/gpio_list) to `/data/RpiGpioSetup/FileSets`.  
 	  Confirm the "overwrite".  
 	- Copy the file `VenusGpioOverlay.dtbo` [right click, save link as...](Files/VenusGpioOverlay.dtbo) to `/data/RpiGpioSetup/FileSets/VersionIndependent`. Confirm the "overwrite".
-	- run setup of RpiGpioSetup
-	```
- 	/data/RpiGpioSetup/setup
- 	```  
+	- run setup of RpiGpioSetup  
+	 ```
+ 	 /data/RpiGpioSetup/setup
+ 	 ```  
       install and activate (i)  
 		  choose (n) to not install the alternate GPIO assignement  
 		  confirm (y) to reboot the system  
