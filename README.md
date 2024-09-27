@@ -9,7 +9,8 @@
 	MCP3208.dtbo
 	
 4)  Remove the SD card and stick it into the RPI. Power-up.
-5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI
+5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
+   Example:
    |Descr|Addr|
    |----|-----|
    |IP |192.168.1.3|  
