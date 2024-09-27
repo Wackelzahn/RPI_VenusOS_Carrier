@@ -70,6 +70,10 @@ finish
 > The RPI Venus Carrier has been tested with my old single can version of the carrier board with temporarily soldered a second little Waveshare RS485 CAN HAT to SPI1-0. See picture.
 > Final Version will have mcp2518FD on board and requires different overlay and setting in config.txt.
 
+@settings { 
+  font-size: 10;
+}
+
 By trial and error I found that dtoverlay=spi1-1cs is for some reason not working (which uses only CS-GPIOpin18). Interface can1 is only recognized with spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more.
 Digital I/O's are not working by just update the gpio_list. Yust updating the gpio_list makes only the relais working. In this case assigned to GPIO2 and GPIO3.
 Digital Inputs need a custom overlay. The overlay provided in RpiGpioSetup is assigning Gpio16 and GPIO19 which collides with can1 interface preventing can1 to run. 
