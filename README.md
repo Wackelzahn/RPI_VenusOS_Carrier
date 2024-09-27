@@ -58,12 +58,12 @@
 	  ```
      
  	  move  
-	  ```  
+	  ```
    	   mv /data/SetupHelper-latest /data/SetupHelper  
 	  ```  
    
-          run the setup:  
-	  ```  
+   	  run the setup:  
+	  ```
           /data/SetupHelper/setup  
    	  ```  
 	- confirm (i) for install and activate, confirm "y" to restart the GUI
