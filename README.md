@@ -52,17 +52,19 @@
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz (e.g. to your Laptop)
 	- Copy this tar file via WinCP/Bitvise to `/home/root` destination
-	- Untar from `/home/root`
+	- In `/home/root` untar:  
   	  ``` 
 	  tar -xzf ./SetupHelper-latest.tar.gz -C /data  
-	  ```  
+	  ```
+     
  	  move  
 	  ```  
    	   mv /data/SetupHelper-latest /data/SetupHelper  
-	  ```  
+	  ```
+   
           run the setup:  
 	  ```  
-           /data/SetupHelper/setup  
+          /data/SetupHelper/setup  
    	  ```  
 	- confirm (i) for install and activate, confirm "y" to restart the GUI
 
