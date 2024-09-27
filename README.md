@@ -41,9 +41,12 @@
 	```  
 	  end the editor with "Ctrl+x" and confirm "y" to safe the file.
 	
-11) Copy the file `dbus-adc.conf` [right click, save link as...](Files/dbus-adc.conf) to RPI /etc/venus with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
-12) Reboot RPI by entering the command "reboot".
-13) Reconnect via ssh. Check with the command
+11) Copy the file `dbus-adc.conf` [right click, save link as...](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
+12) Reboot RPI by entering the command  
+    ```
+    reboot
+    ```  
+14) Reconnect via ssh. Check with the command
       ```
       dmesg | grep can
       ```
@@ -51,7 +54,7 @@
 	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.  
          Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.  
         Picture [Front...](Pictures/Test_Carrier_Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
-14)	Proceed with the installation of **SetupHelper[^2]**
+15)	Proceed with the installation of **SetupHelper[^2]**
   
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz (e.g. to your Laptop)
@@ -72,7 +75,7 @@
    	  ```
 	  confirm (i) for install and activate, confirm "y" to restart the GUI  
 
-15)	Proceed with the installation of **RpiGpioSetup[^3]**
+16)	Proceed with the installation of **RpiGpioSetup[^3]**
 
 	- In the GUI, go to "Settings", "Package Manager"and "Inactive Packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active Packages" and "RpiGpioSetup", download and proceed but do not install!
@@ -88,7 +91,7 @@
       Install and activate (i), choose (n) to not install the alternate GPIO assignement.   
 	  confirm (y) to reboot the system  
 		
-16) Install "RpiTemperature", through SetupHelper.
+17) Install "RpiTemperature", through SetupHelper.
 
 **finish**
 ##
