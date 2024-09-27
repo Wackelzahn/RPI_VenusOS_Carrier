@@ -27,7 +27,7 @@
 9)  Edit the file config.txt:  
    	```
     	  nano /u-boot/config.txt  
-    	```  
+    	  ```  
     		append at the end of the file:  
 	```
 	  dtoverlay=spi1-3cs
