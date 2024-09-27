@@ -19,7 +19,7 @@
 5)	In the Venus OS GUI to SETTINGS, GENERAL, ACCESS LEVEL and (press long time right arrow) to enter SUPERUSER
 6)	Set root (Superuser) Password, e.g. roots1
 7) 	Enable SSH on LAN
-8)  Login with a Terminal (e.g. Bitvise[^Bitvise]) 'ssh root@192.168.1.3'
+8)  Login with a Terminal (e.g. Bitvise[^1]) 'ssh root@192.168.1.3'
 9)  Edit the file: 
 		`nano /u-boot/config.txt`
 	  append at the end of the file:
@@ -37,7 +37,7 @@
 	  Alternatively check in the Venus GUI, go to "Settings" and "Services". can0 and can1 should be up and running.
 	  Check under **"Settings"** and "I/O" if analog Inputs are up and running. Configure to your like.
     (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
-13)	Proceed with the installation of **SetupHelper[^1]**
+13)	Proceed with the installation of **SetupHelper[^2]**
   
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
@@ -49,7 +49,7 @@
 
 15)	Proceed with the installation of RpiGpioSetup
 
-	RpiGpioSetup[^2]
+	RpiGpioSetup[^3]
 	--------------
 	- In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
@@ -91,6 +91,6 @@ finish
 
 Still need to figure out how to retain the Analog Inputs after Firmware update :)
 
-[^Bitvise] : https://bitvise.com/
-[^1]: https://github.com/kwindrem/SetupHelper
-[^2]: https://github.com/kwindrem/RpiGpioSetup
+[^1] : https://bitvise.com/
+[^2]: https://github.com/kwindrem/SetupHelper
+[^3]: https://github.com/kwindrem/RpiGpioSetup
