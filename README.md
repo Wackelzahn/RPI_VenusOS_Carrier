@@ -39,8 +39,8 @@
 	  dtoverlay=mcp2515,spi1-0,oscillator=12000000,speed=2000000,interrupt=24
 	  dtoverlay=mcp2515,spi0-0,oscillator=12000000,speed=2000000,interrupt=25
 	  dtoverlay=mcp3208:spi0-1-present
-	```  
-	  end the editor with "Ctrl+x" and confirm "y" to safe the file.
+      ```  
+      end the editor with "Ctrl+x" and confirm "y" to safe the file.  
 	
 11) Copy the file `dbus-adc.conf` [right click, save link as...](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
 12) Reboot RPI by entering the command  
