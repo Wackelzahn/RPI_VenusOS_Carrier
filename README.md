@@ -39,7 +39,7 @@
     (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
 13)	Proceed with the installation of SetupHelper 
 
-	SetupHelper[^1]
+	###SetupHelper[^1]
 	-------------
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
@@ -51,13 +51,13 @@
 
 14)	Proceed with the installation of RpiGpioSetup
 
-	RpiGpioSetup[^2]
+	###RpiGpioSetup[^2]
 	--------------
-	a) In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
-	b) Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
-	c) Copy (e.g. Bitvise SFTP) the (to your like) modified file "gpio_list" to /data/RpiGpioSetup/FileSets. confirm the "overwrite".
-	d) Copy the file "VenusGpioOverlay.dtbo" (personal modified version) to /data/RpiGpioSetup/FileSets/VersionIndependent. Confirm the "overwrite".
-	e) run setup of RpiGpioSetup -> /data/RpiGpioSetup/setup
+	- In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
+	- Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
+	- Copy (e.g. Bitvise SFTP) the (to your like) modified file "gpio_list" to /data/RpiGpioSetup/FileSets. confirm the "overwrite".
+	- Copy the file "VenusGpioOverlay.dtbo" (personal modified version) to /data/RpiGpioSetup/FileSets/VersionIndependent. Confirm the "overwrite".
+	- run setup of RpiGpioSetup -> /data/RpiGpioSetup/setup
       install and activate (i)
 		  choose (n) to not install the alternate GPIO assignement.
 		  confirm (y) to reboot the system.
