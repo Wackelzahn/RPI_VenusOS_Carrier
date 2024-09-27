@@ -39,8 +39,9 @@
     (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
 13)	Proceed with the installation of SetupHelper 
 
-	###SetupHelper[^1]
+    	SetupHelper[^1]
 	-------------
+   	-------------
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
 	- Copy this tar file via WinCP/Bitvise to /home/root destination
@@ -49,7 +50,7 @@
 	- run the setup: /data/SetupHelper/setup
 	- confirm (i) for install and activate, confirm "y" to restart the GUI
 
-14)	Proceed with the installation of RpiGpioSetup
+15)	Proceed with the installation of RpiGpioSetup
 
 	###RpiGpioSetup[^2]
 	--------------
@@ -62,7 +63,7 @@
 		  choose (n) to not install the alternate GPIO assignement.
 		  confirm (y) to reboot the system.
 		
-15) Install "RpiTemperature", through SetupHelper.
+16) Install "RpiTemperature", through SetupHelper.
 
 finish
 
