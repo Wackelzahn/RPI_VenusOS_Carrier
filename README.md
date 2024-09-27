@@ -47,10 +47,8 @@
 	- run the setup: /data/SetupHelper/setup
 	- confirm (i) for install and activate, confirm "y" to restart the GUI
 
-15)	Proceed with the installation of RpiGpioSetup
+15)	Proceed with the installation of **RpiGpioSetup[^3]**
 
-	RpiGpioSetup[^3]
-	--------------
 	- In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
 	- Copy (e.g. Bitvise SFTP) the (to your like) modified file "gpio_list" to /data/RpiGpioSetup/FileSets. confirm the "overwrite".
