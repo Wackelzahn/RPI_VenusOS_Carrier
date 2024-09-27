@@ -3,14 +3,14 @@
 ## Configuration
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
-3)  Still on windows, copy these files to the sd-card "overlays" folder:
+2)  Copy these files to the sd-card "overlays" folder:
 
     
      > MCP2515.dtbo  [right click, save link as...](Files/mcp2515.dtbo)  
      > MCP3208.dtbo  [right click, save link as...](Files/mcp3208.dtbo)  
 	
-5)  Put the SD card inside RPI, power-up.
-6) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
+3)  Put the SD card inside RPI, power-up.
+4) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
    >  IP    192.168.1.3  
@@ -82,6 +82,11 @@ By trial and error I found that dtoverlay=spi1-1cs is for some reason not workin
 Digital I/O's are not working by just update the gpio_list. Yust updating the gpio_list makes only the relais working. In this case assigned to GPIO2 and GPIO3.
 Digital Inputs need a custom overlay. The overlay provided in RpiGpioSetup is assigning Gpio16 and GPIO19 which collides with can1 interface preventing can1 to run. 
 That is why a custom "VenusGpioOverlay.dtbo" was compiled and the original overlay needs to be replaced during the installation process of RpiGpioSetup (In this case Input pin assignements for 16, 19 and 26 was removed in the overlay).
+
+no space  
+ &nbsp; Miuchael  
+ &ensp; Michael  
+ &emsp; Mihcael  
 
 <!-- COMMENT -->
 <!-- TO DO: add more details about me later -->
