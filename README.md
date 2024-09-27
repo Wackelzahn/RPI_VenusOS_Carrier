@@ -128,7 +128,7 @@ Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See
 
 ## ToDo
 - [x] Test Verson to work.
-- [ ] #1 To figure out how to retain Analog Input settings after FW update  
+- [ ] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input settings after FW update  
 - [ ] Gerber file upload of new HW revision 5.3.  
 - [ ] Manufacture, test and update README according new can interface mcp2518FD.  
 
