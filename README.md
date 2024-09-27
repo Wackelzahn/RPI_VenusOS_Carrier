@@ -46,8 +46,8 @@
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
 	- Copy this tar file via WinCP/Bitvise to /home/root destination
 	- Untar like this from /home/root tar -xzf ./SetupHelper-latest.tar.gz -C /data
-	- '''mv /data/SetupHelper-latest /data/SetupHelper'''
-	- run the setup: '''/data/SetupHelper/setup'''
+	- 'mv /data/SetupHelper-latest /data/SetupHelper'  
+	- run the setup: '/data/SetupHelper/setup'  
 	- confirm (i) for install and activate, confirm "y" to restart the GUI
 
 15)	Proceed with the installation of **RpiGpioSetup[^3]**
