@@ -3,12 +3,11 @@
 ## Configuration
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
-2)	Put it into Raspi
-3)  Still on windows, copy these files to the usb "overlays" folder:
-    MCP2515.dtbo
-	MCP3208.dtbo
+3)  Still on windows, copy these files to the sd-card "overlays" folder:
+   > MCP2515.dtbo
+> MCP3208.dtbo
 	
-4)  Remove the SD card and stick it into the RPI. Power-up.
+4)  Put the SD card inside RPI, power-up.
 5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
@@ -17,7 +16,7 @@
    >  Gateway	  192.168.1.1  
    >   Nameserver	  192.168.1.1   
 
-7)	Connect remote from your computer by typing into your browser (example):
+6)	Connect remote from your computer by typing into your browser (example):
 	  `http://192.168.1.3/`
 5)	In the Venus OS GUI to SETTINGS, GENERAL, ACCESS LEVEL and (press long time right arrow) to enter SUPERUSER
 6)	Set root (Superuser) Password, e.g. roots1
