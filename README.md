@@ -4,8 +4,8 @@
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
 3)  Still on windows, copy these files to the sd-card "overlays" folder:
-   > MCP2515.dtbo
-> MCP3208.dtbo
+     > MCP2515.dtbo  
+     > MCP3208.dtbo  
 	
 4)  Put the SD card inside RPI, power-up.
 5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
