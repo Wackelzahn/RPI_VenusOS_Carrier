@@ -85,7 +85,7 @@
 	  ```  
  	  /data/RpiGpioSetup/setup
  	  ```  
-       - Install and activate (i), choose (n) to not install the alternate GPIO assignement.   
+      Install and activate (i), choose (n) to not install the alternate GPIO assignement.   
 	  confirm (y) to reboot the system  
 		
 16) Install "RpiTemperature", through SetupHelper.
