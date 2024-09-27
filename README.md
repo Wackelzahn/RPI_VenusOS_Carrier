@@ -28,13 +28,13 @@
         ```
     	nano /u-boot/config.txt
     	```
-	  append at the end of the file:
+     	  append at the end of the file:  
 	```
 	  dtoverlay=spi1-3cs
 	  dtoverlay=mcp2515,spi1-0,oscillator=12000000,speed=2000000,interrupt=24
 	  dtoverlay=mcp2515,spi0-0,oscillator=12000000,speed=2000000,interrupt=25
 	  dtoverlay=mcp3208:spi0-1-present
-	```
+	```  
 	  end the editor with "Ctrl+x" and confirm "y" to safe the file.
 	
 11) Copy the file `dbus-adc.conf` [right click, save link as...](Files/dbus-adc.conf) to RPI /etc/venus with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
