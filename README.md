@@ -14,9 +14,9 @@
 		Netmask	    	255.255.255.0
 		Gateway	    	192.168.1.1
 		Nameserver	192.168.1.1 
-6)	Connect remote from your computer by typing into your browser
-	  http://192.168.1.3/
-5)	Go to SETTINGS, GENERAL, ACCESS LEVEL and (press long time right arrow) to enter SUPERUSER
+6)	Connect remote from your computer by typing into your browser (example):
+	  `http://192.168.1.3/`
+5)	In the Venus OS GUI to SETTINGS, GENERAL, ACCESS LEVEL and (press long time right arrow) to enter SUPERUSER
 6)	Set root (Superuser) Password, e.g. roots1
 7) 	Enable SSH on LAN
 8)  Login with (Bitvice xterm) or simple Windows Terminal (ssh root@192.168.1.3)
@@ -39,7 +39,7 @@
     (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
 13)	Proceed with the installation of SetupHelper 
 
-	SetupHelper
+	SetupHelper[^1]
 	-------------
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
@@ -51,7 +51,7 @@
 
 14)	Proceed with the installation of RpiGpioSetup
 
-	RpiGpioSetup[^1]
+	RpiGpioSetup[^2]
 	--------------
 	a) In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	b) Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
@@ -91,4 +91,5 @@ finish
 
 Still need to figure out how to retain the Analog Inputs after Firmware update :)
 
-[^1]: https://github.com/kwindrem/RpiGpioSetup
+[^1]: https://github.com/kwindrem/SetupHelper
+[^2]: https://github.com/kwindrem/RpiGpioSetup
