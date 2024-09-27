@@ -50,11 +50,13 @@
 	  tar -xzf ./SetupHelper-latest.tar.gz -C /data  
 	  ```  
  	- move  
-	  ```
+	  ```  
    	  mv /data/SetupHelper-latest /data/SetupHelper  
           ```  
-	- run the setup:
-	  ```/data/SetupHelper/setup```  
+	- run the setup:  
+	  ```
+   	  /data/SetupHelper/setup  
+   	  ```  
 	- confirm (i) for install and activate, confirm "y" to restart the GUI
 
 15)	Proceed with the installation of **RpiGpioSetup[^3]**
