@@ -46,11 +46,11 @@
     ```
     reboot
     ```  
-14) Reconnect via ssh. Check with the command
+14) Reconnect via ssh. Check with the command if both can0 and can1 are running.
       ```
       dmesg | grep can
-      ```
-      if both can0 and can1 are running.  
+      ```  
+        
 	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.  
          Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.  
         Picture [Front...](Pictures/Test_Carrier_Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
