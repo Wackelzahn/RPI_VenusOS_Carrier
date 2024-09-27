@@ -90,17 +90,20 @@
 		
 16) Install "RpiTemperature", through SetupHelper.
 
-finish
+**finish**
+##
 ##
 
 
-> [!NOTE]
-> The RPI Venus Carrier has been tested with my old single can version of the carrier board with temporarily soldered a second little Waveshare RS485 CAN HAT to SPI1-0. See picture.
-> Final Version will have mcp2518FD on board and requires different overlay and setting in config.txt.
 
-By trial and error I found that dtoverlay=spi1-1cs is for some reason not working (which uses only CS-GPIOpin18). Interface can1 is only recognized with spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more.
-Digital I/O's are not working by just update the gpio_list. Yust updating the gpio_list makes only the relais working. In this case assigned to GPIO2 and GPIO3.
-Digital Inputs need a custom overlay. The overlay provided in RpiGpioSetup is assigning Gpio16 and GPIO19 which collides with can1 interface preventing can1 to run. 
+> [!NOTE]
+> The RPI Venus Carrier has been tested with an old single can version of the carrier board, temporarily soldered a second Waveshare RS485 CAN HAT to SPI1-0. See here [Back...](Pictures/Test_Carrier_back.jpg).  
+> Final Version will have mcp2518FD on board and requires different overlay and setting in config.txt.
+##
+
+- By trial and error it was found that dtoverlay=spi1-1cs to select only one CS is for some reason not working. Interface can1 is only recognized on CS0 with spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more in this case.  
+- Digital I/O's are not working by just update the gpio_list. Yust updating the gpio_list makes only the relais working. In this case assigned to GPIO2 and GPIO3.
+- Digital Inputs need a custom overlay. The overlay provided in RpiGpioSetup is assigning Gpio16 and GPIO19 which collides with can1 interface preventing can1 to run. 
 That is why a custom "VenusGpioOverlay.dtbo" was compiled and the original overlay needs to be replaced during the installation process of RpiGpioSetup (In this case Input pin assignements for 16, 19 and 26 was removed in the overlay).
 
 
@@ -109,10 +112,12 @@ That is why a custom "VenusGpioOverlay.dtbo" was compiled and the original overl
 <!-- TO DO: add more details about me later -->
 
 ## Retaining settings after Firmware update
-All settings are retained after a Firmware update, except the Anlaog Inputs. To be re-installed like above 
-- add the line "dtoverlay=mcp3208:spi0-1-present" to config.txt again.
-- copy and override the file "dbus-adc.conf" in /etc/venus again.
-finish
+All settings are retained after a Firmware update, except the Anlaog Inputs. To be re-installed:  
+- add the line `dtoverlay=mcp3208:spi0-1-present` to config.txt again.  
+- copy and override the file `dbus-adc.conf` in `/etc/venus` again.  
+**finish**
+  ##
+  
 
 Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)
 
