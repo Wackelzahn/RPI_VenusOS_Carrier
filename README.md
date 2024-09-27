@@ -13,10 +13,10 @@
 4) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
-   >  IP   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.1.3  
-   >  netmask	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  255.255.255.0  
-   >  Gateway	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  192.168.1.1  
-   >   Nameserver	  192.168.1.1   
+   >  IP   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -192.168.1.3  
+   >  Netmask	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -255.255.255.0  
+   >  Gateway	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -192.168.1.1  
+   >   Nameserver	  -192.168.1.1   
 
 7)	Connect remote from your computer by typing into your browser (example):
 	  `http://192.168.1.3/`
@@ -38,9 +38,9 @@
 10) Copy the file "dbus-adc.conf" from rep to RPI /etc/venus with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
 11) Reboot RPI by entering the command "reboot".
 12) Reconnect via ssh. Check with the command "dmesg | grep can" if both can0 and can1 is running.
-	  Alternatively check in the Venus GUI, go to "Settings" and "Services". can0 and can1 should be up and running.
-	  Check under **"Settings"** and "I/O" if analog Inputs are up and running. Configure to your like.
-    (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
+	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.
+	  Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.
+    (pictures [front](Pictures/) shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
 13)	Proceed with the installation of **SetupHelper[^2]**
   
 	having root access through SHL or WinCP, 
