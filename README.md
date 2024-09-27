@@ -39,7 +39,7 @@
     (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
 13)	Proceed with the installation of SetupHelper 
 
-    	SetupHelper[^1]
+    	**SetupHelper[^1]**
 	-------------
 
 	having root access through SHL or WinCP, 
@@ -52,7 +52,7 @@
 
 15)	Proceed with the installation of RpiGpioSetup
 
-	###RpiGpioSetup[^2]
+	RpiGpioSetup[^2]
 	--------------
 	- In the GUI, go to "settings", "Package manager" and "Inactive packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active packages" and "RpiGpioSetup", download and proceed but do not install!
