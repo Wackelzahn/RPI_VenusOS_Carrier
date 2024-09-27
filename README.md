@@ -65,12 +65,12 @@
 	  tar -xzf ./SetupHelper-latest.tar.gz -C /data  
 	  ```
      
- 	  move  
+ 	  move
 	  ```
           mv /data/SetupHelper-latest /data/SetupHelper  
 	  ```
    
-   	  run the setup:  
+   	  run the setup:
 	  ```
           /data/SetupHelper/setup  
    	  ```
