@@ -11,10 +11,10 @@
 4)  Remove the SD card and stick it into the RPI. Power-up.
 5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI
    
-   e.g.: 	IP 192.168.1.3  
-   netmask	255.255.255.0  
-   Gateway	192.168.1.1  
-   Nameserver	192.168.1.1   
+   |IP |192.168.1.3|  
+   |netmask	|255.255.255.0|  
+   |Gateway	|192.168.1.1|  
+   |Nameserver	|192.168.1.1|   
 
 7)	Connect remote from your computer by typing into your browser (example):
 	  `http://192.168.1.3/`
