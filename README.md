@@ -10,10 +10,10 @@
 	
 4)  Remove the SD card and stick it into the RPI. Power-up.
 5) 	Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI:
-	e.g.: 	IP		192.168.1.3
-		Netmask	    	255.255.255.0
-		Gateway	    	192.168.1.1
-		Nameserver	192.168.1.1 
+	>e.g.: 	IP		192.168.1.3
+	>	Netmask	    	255.255.255.0
+	>	Gateway	    	192.168.1.1
+	>	Nameserver	192.168.1.1 
 6)	Connect remote from your computer by typing into your browser (example):
 	  `http://192.168.1.3/`
 5)	In the Venus OS GUI to SETTINGS, GENERAL, ACCESS LEVEL and (press long time right arrow) to enter SUPERUSER
@@ -37,10 +37,8 @@
 	  Alternatively check in the Venus GUI, go to "Settings" and "Services". can0 and can1 should be up and running.
 	  Check under **"Settings"** and "I/O" if analog Inputs are up and running. Configure to your like.
     (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
-13)	Proceed with the installation of SetupHelper
-
-	**SetupHelper[^1]**
-    
+13)	Proceed with the installation of **SetupHelper[^1]**
+  
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
 	- Copy this tar file via WinCP/Bitvise to /home/root destination
