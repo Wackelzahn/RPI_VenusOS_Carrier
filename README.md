@@ -40,7 +40,7 @@
 12) Reconnect via ssh. Check with the command
       ```
       dmesg | grep can
-      ```
+      ```  
         if both can0 and can1 are running.
 	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.
 	  Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.
