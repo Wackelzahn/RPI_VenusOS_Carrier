@@ -64,12 +64,12 @@
  	  move  
 	  ```
           mv /data/SetupHelper-latest /data/SetupHelper  
-	  ```  
+	  ```
    
    	  run the setup:  
 	  ```
           /data/SetupHelper/setup  
-   	  ```  
+   	  ```
 	  confirm (i) for install and activate, confirm "y" to restart the GUI  
 
 15)	Proceed with the installation of **RpiGpioSetup[^3]**
@@ -82,7 +82,7 @@
 	  Confirm the "overwrite".
    
 	- Run setup of RpiGpioSetup  
-	  ```  
+	  ```
  	  /data/RpiGpioSetup/setup
  	  ```  
       Install and activate (i), choose (n) to not install the alternate GPIO assignement.   
