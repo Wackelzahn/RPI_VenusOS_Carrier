@@ -1,9 +1,9 @@
-# Rpi_4b_Venus_OS_Carrier
+# RPI_VenusOS_Carrier
 
 > [!WARNING]
 > All files provided in this Repositorie were tested to work with the Rpi_4b_Venus_OS_Carrier (Testversion).  
 > They may not work in other HW environments.
-
+##
 ## Configuration
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
@@ -78,11 +78,14 @@
 	- Go one step back and go to "Active Packages" and "RpiGpioSetup", download and proceed but do not install!
 	- Copy the the file `gpio_list` [right click, save link as...](Files/gpio_list) to `/data/RpiGpioSetup/FileSets`.  
 	  Confirm the "overwrite".  
-	- Copy the file "VenusGpioOverlay.dtbo" (personal modified version) to /data/RpiGpioSetup/FileSets/VersionIndependent. Confirm the "overwrite".
-	- run setup of RpiGpioSetup -> /data/RpiGpioSetup/setup
-      install and activate (i)
-		  choose (n) to not install the alternate GPIO assignement.
-		  confirm (y) to reboot the system.
+	- Copy the file `VenusGpioOverlay.dtbo` [right click, save link as...](Files/VenusGpioOverlay.dtbo) to `/data/RpiGpioSetup/FileSets/VersionIndependent`. Confirm the "overwrite".
+	- run setup of RpiGpioSetup
+	```
+ 	/data/RpiGpioSetup/setup
+ 	```  
+      install and activate (i)  
+		  choose (n) to not install the alternate GPIO assignement  
+		  confirm (y) to reboot the system  
 		
 16) Install "RpiTemperature", through SetupHelper.
 
