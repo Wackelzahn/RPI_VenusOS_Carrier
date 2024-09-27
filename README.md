@@ -1,11 +1,10 @@
 # RPI_VenusOS_Carrier  
 <br>
-
   
 > [!WARNING]
 > All files provided in this Repositorie were tested to work with the Rpi_4b_Venus_OS_Carrier (Testversion).  
 > They may not work in other HW environments.
-##
+<br>
 ## Configuration
 
 1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
@@ -96,15 +95,16 @@
 16) Install "RpiTemperature", through SetupHelper.
 
 **finish**
-##
-##
+<br>
+<br>
 
 
 
 > [!NOTE]
 > The RPI Venus Carrier has been tested with an old single can version of the carrier board, temporarily soldered a second Waveshare RS485 CAN HAT to SPI1-0. See here [Back...](Pictures/Test_Carrier_back.jpg).  
 > Final Version will have mcp2518FD on board and requires different overlay and setting in config.txt.
-##
+<br>
+
 
 - By trial and error it was found that dtoverlay=spi1-1cs to select only one CS ON spi1 is for some reason not working. Interface can1 is only recognized on CS0 with all three CS activated -> spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more in this case.  
 - Digital I/O's are not working by just update the gpio_list. Yust updating the gpio_list makes only the relais working. In this case assigned to GPIO2 and GPIO3.
@@ -127,11 +127,12 @@ All settings are retained after a Firmware update, except the Anlaog Inputs. To 
 Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)
 
 ## ToDo
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
+- [x] Test Verson to work.
+- [ ] #1 To figure out how to retain Analog Input settings after FW update  
+- [ ] Gerber file upload of new HW revision 5.3.  
+- [ ] Manufacture, test and update README according new can interface mcp2518FD.  
 
-Still need to figure out how to retain the Analog Inputs after Firmware update :)
+
 
 [^1] : https://bitvise.com/
 [^2]: https://github.com/kwindrem/SetupHelper
