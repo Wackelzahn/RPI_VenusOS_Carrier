@@ -19,7 +19,7 @@
 5)	In the Venus OS GUI to SETTINGS, GENERAL, ACCESS LEVEL and (press long time right arrow) to enter SUPERUSER
 6)	Set root (Superuser) Password, e.g. roots1
 7) 	Enable SSH on LAN
-8)  Login with (Bitvice xterm) or simple Windows Terminal (ssh root@192.168.1.3)
+8)  Login with a Terminal (e.g. Bitvise[^Bitvise]) 'ssh root@192.168.1.3'
 9)  Edit the file: 
 		`nano /u-boot/config.txt`
 	  append at the end of the file:
@@ -91,5 +91,6 @@ finish
 
 Still need to figure out how to retain the Analog Inputs after Firmware update :)
 
+[^Bitvise] : https://bitvise.com/
 [^1]: https://github.com/kwindrem/SetupHelper
 [^2]: https://github.com/kwindrem/RpiGpioSetup
