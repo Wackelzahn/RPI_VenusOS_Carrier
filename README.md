@@ -6,7 +6,8 @@
 3)  Still on windows, copy these files to the sd-card "overlays" folder:
 
     
-     > MCP2515.dtbo  /main/Files/VenusGpioOverlay.dtbo  
+     > MCP2515.dtbo  
+       [Contribution guidelines for this project](Files/mcp2515.dtbo)  
      > MCP3208.dtbo  
 	
 5)  Put the SD card inside RPI, power-up.
