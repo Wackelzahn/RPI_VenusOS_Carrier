@@ -13,7 +13,7 @@
 4) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
-   >  IP   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.1.3  
+   >  IP   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 192.168.1.3  
    >  netmask	&nbsp;&nbsp;&nbsp;&nbsp;  255.255.255.0  
    >  Gateway	&nbsp;&nbsp;&nbsp;&nbsp;  192.168.1.1  
    >   Nameserver	  192.168.1.1   
