@@ -13,7 +13,7 @@
 4) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
-   >  IP    192.168.1.3  
+   >  IP   &nbsp;&nbsp; 192.168.1.3  
    >  netmask	  255.255.255.0  
    >  Gateway	  192.168.1.1  
    >   Nameserver	  192.168.1.1   
@@ -83,10 +83,7 @@ Digital I/O's are not working by just update the gpio_list. Yust updating the gp
 Digital Inputs need a custom overlay. The overlay provided in RpiGpioSetup is assigning Gpio16 and GPIO19 which collides with can1 interface preventing can1 to run. 
 That is why a custom "VenusGpioOverlay.dtbo" was compiled and the original overlay needs to be replaced during the installation process of RpiGpioSetup (In this case Input pin assignements for 16, 19 and 26 was removed in the overlay).
 
-no space  
- &nbsp; Miuchael  
- &ensp; Michael  
- &emsp; Mihcael  
+
 
 <!-- COMMENT -->
 <!-- TO DO: add more details about me later -->
