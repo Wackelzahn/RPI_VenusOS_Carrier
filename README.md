@@ -134,6 +134,6 @@ Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See
 
 
 
-[^1] : https://bitvise.com/
+[^1]: https://bitvise.com/
 [^2]: https://github.com/kwindrem/SetupHelper
 [^3]: https://github.com/kwindrem/RpiGpioSetup
