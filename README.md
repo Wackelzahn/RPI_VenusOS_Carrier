@@ -44,7 +44,7 @@
   
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
-	- Copy this tar file via WinCP/Bitvise to /home/root destination
+	- Copy this tar file via WinCP/Bitvise to `/home/root` destination
 	- Untar from `/home/root`  
   	  ``` 
 	  tar -xzf ./SetupHelper-latest.tar.gz -C /data  
