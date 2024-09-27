@@ -40,8 +40,7 @@
 13)	Proceed with the installation of SetupHelper 
 
     	**SetupHelper[^1]**
-	-------------
-
+	
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
 	- Copy this tar file via WinCP/Bitvise to /home/root destination
