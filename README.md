@@ -76,7 +76,8 @@
 
 	- In the GUI, go to "Settings", "Package Manager"and "Inactive Packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active Packages" and "RpiGpioSetup", download and proceed but do not install!
-	- Copy the modified file "gpio_list" to /data/RpiGpioSetup/FileSets. confirm the "overwrite".
+	- Copy the the file `gpio_list` [right click, save link as...](Files/gpio_list) to `/data/RpiGpioSetup/FileSets`.  
+	  Confirm the "overwrite".  
 	- Copy the file "VenusGpioOverlay.dtbo" (personal modified version) to /data/RpiGpioSetup/FileSets/VersionIndependent. Confirm the "overwrite".
 	- run setup of RpiGpioSetup -> /data/RpiGpioSetup/setup
       install and activate (i)
@@ -106,6 +107,8 @@ All settings are retained after a Firmware update, except the Anlaog Inputs. To 
 - add the line "dtoverlay=mcp3208:spi0-1-present" to config.txt again.
 - copy and override the file "dbus-adc.conf" in /etc/venus again.
 finish
+
+Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)
 
 ## ToDo
 - [x] #739
