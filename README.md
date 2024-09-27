@@ -40,11 +40,11 @@
 12) Reconnect via ssh. Check with the command "dmesg | grep can" if both can0 and can1 is running.
 	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.
 	  Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.
-    (pictures [front](Pictures/) shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
+    (pictures [front](Pictures/Test Carrier Front.jpg) shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
 13)	Proceed with the installation of **SetupHelper[^2]**
   
 	having root access through SHL or WinCP, 
-	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
+	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz (e.g. to your Laptop)
 	- Copy this tar file via WinCP/Bitvise to `/home/root` destination
 	- Untar from `/home/root`
   	  ``` 
