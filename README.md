@@ -6,9 +6,8 @@
 3)  Still on windows, copy these files to the sd-card "overlays" folder:
 
     
-     > MCP2515.dtbo  
-       [Contribution guidelines for this project](Files/mcp2515.dtbo)  
-     > MCP3208.dtbo  
+     > MCP2515.dtbo  [right click, save link as...](Files/mcp2515.dtbo)  
+     > MCP3208.dtbo  [right click, save link as...](Files/mcp3208.dtbo)  
 	
 5)  Put the SD card inside RPI, power-up.
 6) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
