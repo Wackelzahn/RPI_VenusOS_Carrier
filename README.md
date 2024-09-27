@@ -52,7 +52,7 @@
  	- move  
 	  ```  
    	  mv /data/SetupHelper-latest /data/SetupHelper  
-          ```  
+   
 	- run the setup:  
 	  ```
    	  /data/SetupHelper/setup  
