@@ -24,10 +24,10 @@
 6)	Set root (Superuser) Password, e.g. roots1
 7) 	Enable SSH on LAN
 8)  Login with a Terminal 'ssh root@192.168.1.3' (e.g. https://bitvise.com/)
-9)  Edit the file config.txt: 
-        ```
-    	nano /u-boot/config.txt
-    	```
+9)  Edit the file config.txt:  
+          ```
+    	  nano /u-boot/config.txt  
+    	  ```
      	  append at the end of the file:  
 	```
 	  dtoverlay=spi1-3cs
