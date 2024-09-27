@@ -35,12 +35,12 @@
 11) Reboot RPI by entering the command "reboot".
 12) Reconnect via ssh. Check with the command "dmesg | grep can" if both can0 and can1 is running.
 	  Alternatively check in the Venus GUI, go to "Settings" and "Services". can0 and can1 should be up and running.
-	  Check under "Settings" and "I/O" if analog Inputs are up and running. Configure to your like.
+	  Check under **"Settings"** and "I/O" if analog Inputs are up and running. Configure to your like.
     (I have connected a LM331 on Channel 0:4, activate and check the Device list for working temperature).
-13)	Proceed with the installation of SetupHelper 
+13)	Proceed with the installation of SetupHelper
 
-    	**SetupHelper[^1]**
-	
+	**SetupHelper[^1]**
+    
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz to your laptop
 	- Copy this tar file via WinCP/Bitvise to /home/root destination
