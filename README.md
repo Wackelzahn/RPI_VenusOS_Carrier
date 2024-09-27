@@ -44,7 +44,7 @@
       if both can0 and can1 are running.  
 	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.  
          Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.  
-        Picture [right click, save link as...](Pictures/Test Carrier Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
+        Picture [right click, save link as...](Pictures/Test_Carrier_Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
 14)	Proceed with the installation of **SetupHelper[^2]**
   
 	having root access through SHL or WinCP, 
