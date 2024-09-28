@@ -127,7 +127,7 @@ All settings are retained after a Firmware update, except the Anlaog Inputs. To 
 Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)
 
 ## ToDo
-- [x] Test Verson to work.
+- [x] Make test version work.
 - [ ] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input settings after FW update
 - [ ] [#2](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/2) Need to figure out why simple install of gpio_list and RpiGpioOverlay.dtbo is not sufficient.
 - [ ] Gerber file upload of new HW revision 5.3.  
