@@ -42,7 +42,7 @@
       ```  
       end the editor with "Ctrl+x" and confirm "y" to safe the file.  
 	
-11) Copy the file `dbus-adc.conf` [right click, save link as...](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
+11) Copy the file `dbus-adc.conf` [dbus-adc.conf](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
 12) Reboot RPI by entering the command  
     ```
     reboot
