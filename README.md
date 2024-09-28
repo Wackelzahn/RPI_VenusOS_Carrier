@@ -42,7 +42,7 @@
       ```  
       end the editor with "Ctrl+x" and confirm "y" to safe the file.  
 	
-11) Copy the file `dbus-adc.conf` [dbus-adc.conf](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
+11) Copy the file [dbus-adc.conf](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
 12) Reboot RPI by entering the command  
     ```
     reboot
@@ -80,9 +80,9 @@
 
 	- In the GUI, go to "Settings", "Package Manager"and "Inactive Packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active Packages" and "RpiGpioSetup", download and proceed but do not install!
-	- Copy the the file `gpio_list` [right click, save link as...](Files/gpio_list) to `/data/RpiGpioSetup/FileSets`.  
+	- Copy the the file [gpio_list](Files/gpio_list) to `/data/RpiGpioSetup/FileSets`.  
 	  Confirm the "overwrite".  
-	- Copy the file `VenusGpioOverlay.dtbo` [right click, save link as...](Files/VenusGpioOverlay.dtbo) to `/data/RpiGpioSetup/FileSets/VersionIndependent`.  
+	- Copy the file [VenusGpioOverlay.dtbo](Files/VenusGpioOverlay.dtbo) to `/data/RpiGpioSetup/FileSets/VersionIndependent`.  
 	  Confirm the "overwrite".
    
 	- Run setup of RpiGpioSetup  
