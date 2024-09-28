@@ -128,9 +128,11 @@ Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See
 
 ## ToDo
 - [x] Test Verson to work.
-- [ ] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input settings after FW update  
+- [ ] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input settings after FW update
+- [ ] [#2](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/2) Need to figure out why simple install of gpio_list and RpiGpioOverlay.dtbo is not sufficient.
 - [ ] Gerber file upload of new HW revision 5.3.  
-- [ ] Manufacture, test and update README according new can interface mcp2518FD.  
+- [ ] Manufacture, test and update README according new can interface mcp2518FD.
+- [ ] Make a script for automated installation of all steps above (well, once I figure #1 and #2).
 
 
 
