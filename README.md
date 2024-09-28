@@ -12,8 +12,8 @@
 2)  Copy these files to the sd-card "overlays" folder:
 
     
-     > MCP2515.dtbo  [right click, save link as...](Files/mcp2515.dtbo)  
-     > MCP3208.dtbo  [right click, save link as...](Files/mcp3208.dtbo)  
+     > [MCP2515.dtbo](Files/mcp2515.dtbo)  
+     > [MCP3208.dtbo](Files/mcp3208.dtbo)  
 	
 3)  Put the SD card inside RPI, power-up.
 4) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
@@ -29,7 +29,7 @@
 6)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
 7)	Set root (Superuser) Password!
 8) 	Enable SSH on LAN
-9)  Login with a Terminal 'ssh root@192.168.1.3' (e.g. https://bitvise.com/)
+9)  Login with a Terminal `ssh root@192.168.1.3` (e.g. https://bitvise.com/)
 10)  Edit the file config.txt:  
      ```  
      nano /u-boot/config.txt  
