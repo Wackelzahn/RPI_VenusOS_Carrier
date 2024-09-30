@@ -1,22 +1,15 @@
-# RPI_VenusOS_Carrier  
+# RpiVenusCarrierSetup  
 <br>
   
 > [!WARNING]
 > All files provided in this Repositorie were tested to work with the Rpi_4b_Venus_OS_Carrier (Testversion).  
-> Other HW environments need different configurations.
+> The automated installation and configuration won't work on other HW environments.
 <br>
 <br>
 ## Configuration
 
-1)	Burn latest firmware (tested with Venus OS 3.50~25) on SD card 
-2)  Copy these files to the sd-card "overlays" folder:
-
-    
-     > [MCP2515.dtbo](Files/mcp2515.dtbo)  
-     > [MCP3208.dtbo](Files/mcp3208.dtbo)  
-	
-3)  Put the SD card inside RPI, power-up.
-4) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
+1) Burn latest firmware (tested with Venus OS 3.50~25) on SD card and start your RPI in the Carrier environment.
+5) Connect via VictronConnect (Bluetooth) and assign IP Address or leave on Auto if you know how to reach your RPI 
    Example:
    
    >  IP   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -192.168.1.3  
@@ -24,15 +17,20 @@
    >  Gateway	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -192.168.1.1  
    >   Nameserver	  -192.168.1.1   
 
-5)	Connect remote from your computer by typing into your browser (example):
+6)	Connect remote from your computer by typing into your browser. For the example above, it would be:
 	  `http://192.168.1.3/`
-6)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
-7)	Set root (Superuser) Password!
-8) 	Enable SSH on LAN
-9)  Login with a Terminal `ssh root@192.168.1.3` (e.g. https://bitvise.com/)
-10)  Edit the file config.txt:  
+7)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
+8)	Set root (Superuser) Password!
+9) 	Enable SSH on LAN
+10)  Login with a Terminal `ssh root@192.168.1.3` (e.g. https://bitvise.com/)
+11)  Now that you have access to the RPI, download the latest instalation file [RpiVenusCarrier](latest/RpiVenusCarrier.tar.gz) and move it to `/home/root` on your RPI (e.g. with Bitvise SFTP client)
+12)  unpack the tar file to `/data` on the RPI:
+     ```
+     tar -xzf ./RpiVenusCarrier.tar.gz -C /data
+     ```
+14)  Need to chnge the setup script to execute:
      ```  
-     nano /u-boot/config.txt  
+     chmod 755 /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
      ```
      append at the end of the file:    
      ```  
@@ -43,12 +41,12 @@
       ```  
       end the editor with "Ctrl+x" and confirm "y" to safe the file.  
 	
-11) Copy the file [dbus-adc.conf](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
-12) Reboot RPI by entering the command  
+16) Copy the file [dbus-adc.conf](Files/dbus-adc.conf) to RPI `/etc/venus` with Bitvise SFTP (or similar program). Confirm to overwrite the file. 
+17) Reboot RPI by entering the command  
     ```
     reboot
     ```  
-13) Reconnect via ssh. Check with the command if both can0 and can1 are running.
+18) Reconnect via ssh. Check with the command if both can0 and can1 are running.
       ```
       dmesg | grep can
       ```  
@@ -56,7 +54,7 @@
 	  Alternatively check in the Venus GUI, go to SETTINGS and SERIVCES. can0 and can1 should be up and running.  
          Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.  
         Picture [Front...](Pictures/Test_Carrier_Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
-14)	Proceed with the installation of **SetupHelper[^2]**
+19)	Proceed with the installation of **SetupHelper[^2]**
   
 	having root access through SHL or WinCP, 
 	- Download: https://github.com/kwindrem/SetupHelper/archive/latest.tar.gz (e.g. to your Laptop)
@@ -77,7 +75,7 @@
    	  ```
 	  confirm (i) for install and activate, confirm "y" to restart the GUI  
 
-15)	Proceed with the installation of **RpiGpioSetup[^3]**
+20)	Proceed with the installation of **RpiGpioSetup[^3]**
 
 	- In the GUI, go to "Settings", "Package Manager"and "Inactive Packages". Scroll down to "RpiGpioSetup" and add RpiGpioSetup (proceed).
 	- Go one step back and go to "Active Packages" and "RpiGpioSetup", download and proceed but do not install!
@@ -93,7 +91,7 @@
       Install and activate (i), choose (n) to not install the alternate GPIO assignement.   
 	  confirm (y) to reboot the system  
 		
-16) Install "RpiTemperature", through SetupHelper.
+21) Install "RpiTemperature", through SetupHelper.
 
 **finish**
 <br>
