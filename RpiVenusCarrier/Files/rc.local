@@ -1,0 +1,27 @@
+#!/bin/bash
+
+source "/data/RpiVenusCarrier/RpiVenusCarrierFunctions"
+
+echo "checking log file existance..."
+checkLogFile 
+	if checkLogFile
+		then
+			echo $(date) >> $log
+			echo "log file confirms installation of RpiVenusCarrier" |tee -a $log
+			echo "no further action..." |tee -a $log
+			echo "good bye!" |tee -a $log
+		else	
+			echo "log is not existing, possible FW update"
+			echo "performing re-setup...."
+					rpiVenusCarrierCreateLog
+					rpiVenusCarrierManualSetup
+					rpiVenusCarrierRcLocal
+					rpiVenusCarrierSetup
+					rpiVenusCarrierReboot
+			
+	fi
+
+
+
+
+
