@@ -32,7 +32,7 @@
      ```  
      chmod 755 /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
      chmod 755 /data/RpiVenusCarrier/Files/RpiVenusCarrierFunctions.sh
-     chmod 755 /data/RpiVenusCarrier/Files/rc.local.sh
+     chmod 755 /data/RpiVenusCarrier/Files/rc.local
      ```
 15) Run the setup script
     ```
