@@ -5,3 +5,11 @@ device tree compiler
 -disassemble dtbo to dts
 	dtc -I dtb -O dts -o mcp3208.dts mcp3208.dtbo
 
+tar
+--------------------
+tar -cvf RpiVenusCarrier.tar.gz /home/michael/RpiVenusCarrier
+
+untar
+--------------------
+
+
