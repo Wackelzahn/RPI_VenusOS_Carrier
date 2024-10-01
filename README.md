@@ -22,9 +22,13 @@
 7)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
 8)	Set root (Superuser) Password!
 9) 	Enable SSH on LAN
-10)  Login with a Terminal `ssh root@192.168.1.3` (e.g. https://bitvise.com/ or https://Putty.org)
-11)  Now that you have access to the RPI, download the latest installation file from this repo [RpiVenusCarrier](latest/RpiVenusCarrier.tar.gz) and move it to `/home/root` on your RPI (e.g. with Bitvise SFTP client)
-12)  unpack the tar file to `/data` on the RPI:
+10)  Login with a Terminal `ssh root@192.168.1.3` (e.g. https://bitvise.com/ or https://Putty.org)  
+>[!Note]
+> After a Firmware update of Venus OS, the root PW is being reset!
+> It is therfore recommended to install ssh keys for authentication and access to your Venus machine.
+<br>
+12)  Now that you have access to the RPI, download the latest installation file from this repo [RpiVenusCarrier](latest/RpiVenusCarrier.tar.gz) and move it to `/home/root` on your RPI (e.g. with Bitvise SFTP client)
+13)  unpack the tar file to `/data` on the RPI:
      ```
      tar -xvzf ./RpiVenusCarrier.tar.gz -C /data
      ```
