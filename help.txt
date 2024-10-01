@@ -7,7 +7,7 @@ device tree compiler
 
 tar
 --------------------
-tar -cvf RpiVenusCarrier.tar.gz /home/michael/RpiVenusCarrier
+tar -czvf RpiVenusCarrier.tar.gz /home/michael/RpiVenusCarrier
 
 untar
 --------------------
