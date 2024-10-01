@@ -31,7 +31,7 @@
 14)  Change permissions of some files:
      ```  
      chmod 755 /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
-     chmod 755 /data/RpiVenusCarrier/Files/RpiVenusCarrierFunctions.sh
+     chmod 755 /data/RpiVenusCarrier/Files/RpiVenusCarrierFunctions
      chmod 755 /data/RpiVenusCarrier/Files/rc.local
      ```
 15) Run the setup script
