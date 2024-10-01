@@ -11,5 +11,5 @@ tar -cvf RpiVenusCarrier.tar.gz /home/michael/RpiVenusCarrier
 
 untar
 --------------------
-
+tar -xzf ./RpiVenusCarrier.tar.gz -C /data
 
