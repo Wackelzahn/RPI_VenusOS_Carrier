@@ -27,6 +27,7 @@
 > After a Firmware update of Venus OS, the root PW is being reset!
 > It is therfore recommended to install ssh keys for authentication and access to your Venus machine.
 <br>
+  
 12)  Now that you have access to the RPI, download the latest installation file from this repo [RpiVenusCarrier](latest/RpiVenusCarrier.tar.gz) and move it to `/home/root` on your RPI (e.g. with Bitvise SFTP client)
 13)  unpack the tar file to `/data` on the RPI:
      ```
