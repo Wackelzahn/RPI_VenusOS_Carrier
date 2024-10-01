@@ -28,15 +28,17 @@
      ```
      tar -xvzf ./RpiVenusCarrier.tar.gz -C /data
      ```
-14)  Change the setup script permissions to make it executable:
-     ```  cd 
+14)  Change permissions of some files:
+     ```  
      chmod 755 /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
+     chmod 755 /data/RpiVenusCarrier/Files/RpiVenusCarrierFunctions.sh
+     chmod 755 /data/RpiVenusCarrier/Files/rc.local.sh
      ```
 15) Run the setup script
     ```
     /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
     ```
-16) After the completion of the script, RPI will reboot.
+16) After the completion of the script, RPI will reboot. You may check the log file `/etc/venus/RpiVenusCarrierLog.txt`
 17) Finish!  
 20) You may check the functionality.
     Reconnect via ssh. Check with the command if both can0 and can1 are running.
