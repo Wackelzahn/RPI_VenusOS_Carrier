@@ -26,10 +26,10 @@
 11)  Now that you have access to the RPI, download the latest installation file from this repo [RpiVenusCarrier](latest/RpiVenusCarrier.tar.gz) and move it to `/home/root` on your RPI (e.g. with Bitvise SFTP client)
 12)  unpack the tar file to `/data` on the RPI:
      ```
-     tar -xzf ./RpiVenusCarrier.tar.gz -C /data
+     tar -xvzf ./RpiVenusCarrier.tar.gz -C /data
      ```
 14)  Change the setup script permissions to make it executable:
-     ```  
+     ```  cd 
      chmod 755 /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
      ```
 15) Run the setup script
