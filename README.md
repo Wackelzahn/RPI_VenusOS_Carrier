@@ -5,7 +5,6 @@
 > All files provided in this Repositorie were tested to work with the RpiVenusCarrier (Testversion).  
 > The files may not work on other HW environments.
 <br>
-<br>
 
 ## Configuration
 
@@ -91,7 +90,7 @@
   
 
 Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)
-
+<br>  
 ## ToDo
 - [x] Make test version work.
 - [ ] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input configuration after FW update
