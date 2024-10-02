@@ -68,7 +68,7 @@
     ```
     /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
     ```
-5) Rpi will reboot and all settings are retained.
+5) Rpi will reboot and all settings are retained.  
 **finish**
   ##
 <br>
