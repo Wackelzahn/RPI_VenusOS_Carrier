@@ -23,22 +23,14 @@
 8)	Set root (Superuser) Password!
 9) 	Enable SSH on LAN
 10)  Login with a Terminal `ssh root@192.168.1.3` (e.g. https://bitvise.com/ or https://Putty.org)  
->[!Note]
-> After a Firmware update of Venus OS, the root PW is being reset!
-> It is therfore recommended to install ssh keys for authentication and access to your Venus machine.
-<br>
+
   
 12)  Now that you have access to the RPI, download the latest installation file from this repo [RpiVenusCarrier](latest/RpiVenusCarrier.tar.gz) and move it to `/home/root` on your RPI (e.g. with Bitvise SFTP client)
 13)  unpack the tar file to `/data` on the RPI:
      ```
      tar -xvzf ./RpiVenusCarrier.tar.gz -C /data
      ```
-14)  Change permissions of some files:
-     ```  
-     chmod 755 /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
-     chmod 755 /data/RpiVenusCarrier/Files/RpiVenusCarrierFunctions
-     chmod 755 /data/RpiVenusCarrier/Files/rc.local
-     ```
+
 15) Run the setup script
     ```
     /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
@@ -79,6 +71,9 @@
 
 ## Retaining settings after Firmware update
 need to work on that :)
+>[!Note]
+> After a Firmware update of Venus OS, the root PW is being reset!
+> It is therfore recommended to install ssh keys for authentication and access to your Venus machine.
 All settings are retained after a Firmware update, except the Anlaog Inputs. To be re-installed:  
 - add the line `dtoverlay=mcp3208:spi0-1-present` to config.txt again.  
 - copy and override the file `dbus-adc.conf` in `/etc/venus` again.  
