@@ -76,8 +76,8 @@
 > [!NOTE]
 > The RpiVenusCarrier has been tested with an old single can version of the HW carrier board hw3.9, temporarily soldered a second Waveshare RS485 CAN HAT to SPI1-0. See here [Back...](Pictures/Test_Carrier_back.jpg).  
 > Final Version hw5.4 will have mcp2518FD on board and requires different overlay and setting in config.txt.
-<br>
 
+## Issues
 
 - By trial and error it was found that dtoverlay=spi1-1cs (to select only one CS on spi1) is for some reason not working. Interface can1 is only recognized on CS0 with all three CS activated -> spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more.  
 
@@ -93,12 +93,12 @@ Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See
 <br>  
 ## ToDo
 - [x] Make test version work.
-- [ ] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input configuration after FW update
+- [x] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input configuration after FW update
 - [x] [#2](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/2) Need to figure out why a simple install of gpio_list and RpiGpioOverlay.dtbo is not sufficient for making the digital Inputs work.
-- [ ] Fix file permissions to not do this manually in the step procedure above
+- [x] Fix file permissions to not do this manually in the step procedure above
 - [ ] Gerber file upload of new HW revision 5.3.  
 - [ ] Manufacture, test and update README according new can interface mcp2518FD.
-- [ ] Make a script for automated installation of all steps above (well, once I figure #1 and #2).
+- [x] Make a script for automated installation of all steps above (well, once I figure #1 and #2).
 
 
 
