@@ -77,14 +77,15 @@
 <br>
 
 ## Thank you  
-Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)  
+Special Thanks to Rob Duthie who helped to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)  
 <br>  
 
 > [!NOTE]
 > The RpiVenusCarrier has been tested with an old single can version of the HW carrier board hw3.9, temporarily soldered a second Waveshare RS485 CAN HAT to SPI1-0. See here [Back...](Pictures/Test_Carrier_back.jpg).  
 > Final Version hw5.4 will have mcp2518FD on board and requires different overlay and setting in config.txt.  
 <br>
-<br> 
+<br>
+
 ## ToDo  
 - [x] Make test version work.
 - [x] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input configuration after FW update
