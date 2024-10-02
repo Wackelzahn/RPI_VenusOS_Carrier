@@ -6,6 +6,7 @@
 > The automated installation and configuration won't work on other HW environments.
 <br>
 <br>
+
 ## Configuration
 
 1) Burn latest firmware (tested with Venus OS 3.50~25) on SD card and start your RPI in the Carrier environment.
