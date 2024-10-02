@@ -71,7 +71,6 @@
 5) Rpi will reboot and all settings are retained.  
 **finish**
 <br> 
-<br>
 
 ## Issues  
 - By trial and error it was found that dtoverlay=spi1-1cs (to select only one CS on spi1) is for some reason not working. Interface can1 is only recognized on CS0 with all three CS activated -> spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more.  
