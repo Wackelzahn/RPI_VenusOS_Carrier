@@ -54,7 +54,7 @@
 <br>
 <br>
 
-## Venus OS Firmware update
+## Venus OS Firmware update  
 
 
 >[!Note]
@@ -73,12 +73,12 @@
 <br> 
 <br>
 
-## Issues
+## Issues  
 - By trial and error it was found that dtoverlay=spi1-1cs (to select only one CS on spi1) is for some reason not working. Interface can1 is only recognized on CS0 with all three CS activated -> spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more.  
 <br> 
-## Thank you
+## Thank you  
 <!-- COMMENT -->
-Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)
+Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)  
 <br>  
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See
 > Final Version hw5.4 will have mcp2518FD on board and requires different overlay and setting in config.txt.  
 <br>
 <br> 
-## ToDo
+## ToDo  
 - [x] Make test version work.
 - [x] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input configuration after FW update
 - [x] [#2](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/2) Need to figure out why a simple install of gpio_list and RpiGpioOverlay.dtbo is not sufficient for making the digital Inputs work.
