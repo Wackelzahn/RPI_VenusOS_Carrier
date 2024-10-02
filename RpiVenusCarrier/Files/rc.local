@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "sleep 8"
+env sleep 8
+
+source "/data/RpiVenusCarrier/Files/RpiVenusCarrierFunctions"
+
+echo "checking log file existance..."
+	if checkLogFile
+		then
+			echo $(date) >> $log
+			echo "log file confirms installation of RpiVenusCarrier" |tee -a $log
+			echo "no further action..." |tee -a $log
+			echo "good bye!" |tee -a $log
+		else	
+			echo "log is not existing, possible FW update" 
+			echo "performing re-setup...." 
+					rpiVenusCarrierCreateLog
+					rpiVenusCarrierSetup
+					#rpiVenusCarrierReboot
+	fi
+
+
+
+
+
