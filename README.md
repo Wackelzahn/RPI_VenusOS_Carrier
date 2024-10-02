@@ -2,8 +2,8 @@
 <br>
   
 > [!WARNING]
-> All files provided in this Repositorie were tested to work with the Rpi_4b_Venus_OS_Carrier (Testversion).  
-> The automated installation and configuration won't work on other HW environments.
+> All files provided in this Repositorie were tested to work with the RpiVenusCarrier (Testversion).  
+> The files may not work on other HW environments.
 <br>
 <br>
 
@@ -53,9 +53,25 @@
 
 **finish**
 <br>
+
+## Venus OS Firmware update
+
+
+>[!Note]
+> All files are deleted after a Firmware update of Venus OS, except the ones on `/data`.
+> Also the `root` PW is being reset! It is therfore recommended to install ssh keys (which will be retained) for authentication and access to your Venus machine.
+
+### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier
+1)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
+2)	Set root (Superuser) Password! (again..)
+4) Run the setup script (again..)
+    ```
+    /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
+    ```
+5) Rpi will reboot and all settings are retained.
+**finish**
+  ##
 <br>
-
-
 
 > [!NOTE]
 > The RpiVenusCarrier has been tested with an old single can version of the HW carrier board hw3.9, temporarily soldered a second Waveshare RS485 CAN HAT to SPI1-0. See here [Back...](Pictures/Test_Carrier_back.jpg).  
@@ -70,16 +86,7 @@
 <!-- COMMENT -->
 <!-- TO DO: add more details about me later -->
 
-## Retaining settings after Firmware update
-need to work on that :)
->[!Note]
-> After a Firmware update of Venus OS, the root PW is being reset!
-> It is therfore recommended to install ssh keys for authentication and access to your Venus machine.
-All settings are retained after a Firmware update, except the Anlaog Inputs. To be re-installed:  
-- add the line `dtoverlay=mcp3208:spi0-1-present` to config.txt again.  
-- copy and override the file `dbus-adc.conf` in `/etc/venus` again.  
-**finish**
-  ##
+
   
 
 Special Thanks to Rob Duthie who helped me to get the Analog Inputs working. See.. [link](https://communityarchive.victronenergy.com/articles/38710/victron-raspi-hat.html)
