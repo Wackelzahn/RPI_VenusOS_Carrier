@@ -61,15 +61,10 @@
 > All files are deleted after a Firmware update of Venus OS, except the ones on `/data`.
 > Also the `root` PW is being reset! It is therfore recommended to install ssh keys (which will be retained) for authentication and access to your Venus machine.
 
-### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier
-1)	In the Venus OS GUI go to "Settings", "General", "Access Level" and (press long time right arrow) enter "Superuser"
-2)	Set root (Superuser) Password! (again..)
-4) Run the setup script (again..)
-    ```
-    /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
-    ```
-5) Rpi will reboot and all settings are retained.  
-**finish**
+### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier^1
+- none, the configuration is re-written automatically through `/data/rc.local` and the machine is once rebooting.
+- <br>   
+**finish**  
 <br> 
 
 ## Issues  
@@ -87,16 +82,12 @@ Special Thanks to Rob Duthie who helped to get the Analog Inputs working. See.. 
 <br>
 
 ## ToDo  
-- [x] Make test version work.
-- [x] [#1](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/1) To figure out how to retain Analog Input configuration after FW update
-- [x] [#2](https://github.com/Wackelzahn/RPI_VenusOS_Carrier/issues/2) Need to figure out why a simple install of gpio_list and RpiGpioOverlay.dtbo is not sufficient for making the digital Inputs work.
-- [x] Fix file permissions to not do this manually in the step procedure above
-- [ ] Gerber file upload of new HW revision 5.3.  
+
+- [ ] Gerber file upload of new HW revision 5.4.
 - [ ] Manufacture, test and update README according new can interface mcp2518FD.
-- [x] Make a script for automated installation of all steps above (well, once I figure #1 and #2).
 
 
 
-[^1]: https://bitvise.com/
-[^2]: https://github.com/kwindrem/SetupHelper
-[^3]: https://github.com/kwindrem/RpiGpioSetup
+
+[^1]: There are quite some discussions in various forums on how to implement proper data/setting retention after a re-start/firmware update. For the RpiVenusCarrier solution, this guide from Victron was followed [link](https://www.victronenergy.com/live/ccgx:root_access) It is important to note that after a FW-update the rootfs partition is read only. You may only write/copy/remove/configure through `/data/rc.local` once you have regained writing rights. 
+
