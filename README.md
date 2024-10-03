@@ -61,7 +61,7 @@
 > All files are deleted after a Firmware update of Venus OS, except the ones on `/data`.
 > Also the `root` PW is being reset! It is therfore recommended to install ssh keys (which will be retained) for authentication and access to your Venus machine.
 
-### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier^1
+### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier[^1]
 - none, the configuration is re-written automatically through `/data/rc.local` and the machine is once rebooting.
 - <br>   
 **finish**  
