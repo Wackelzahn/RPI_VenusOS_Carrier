@@ -1,0 +1,8 @@
+please be careful in using the files 
+ - /RpiVenusCarrierSetup.sh
+ - /Files/rc.local
+ - /Files/RpiVenusCarrierFunctions
+from this directory in your machine. 
+Even though they are the latest files, however you need to change the permissons again .. chmod 755 file.
+They are obviously lost during moving the files around in Windows and then cpying to the repo.
+Use the guide instead with the tar.gz file.
