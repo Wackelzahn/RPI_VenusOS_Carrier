@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#echo "sleep 8"
+#env sleep 8
+
+source "/data/RpiVenusCarrier/Files/RpiVenusCarrierFunctions"
+
+echo "checking log file existance..."
+	if checkVersion
+		then
+			echo $(date) >> $log
+			echo "Version file confirms no change of RpiVenusCarrier" |tee -a $log
+			echo "no further action..." |tee -a $log
+			echo "good bye!" |tee -a $log
+		else	
+			echo $(date) >> $log
+			echo "Version is different, possible FW update" |tee -a $log
+			echo "performing re-setup...." |tee -a $log
+			mount -o remount,rw /		
+					rpiVenusCarrierSetup
+					rpiVenusCarrierReboot
+	fi
+
+
+
+
+
