@@ -83,7 +83,7 @@ Special Thanks to Rob Duthie who helped to get the Analog Inputs working. See.. 
 
 ## ToDo  
 - [ ] uninstall script :)
-- [ ] Gerber file upload of new HW revision 5.4.
+- [X] Gerber file upload of new HW revision 5.4.
 - [ ] Manufacture, test and update README according new can interface mcp2518FD.
 
 
