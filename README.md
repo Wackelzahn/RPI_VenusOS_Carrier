@@ -47,7 +47,7 @@
     Check under SETTINGS, I/O if digital Inputs are up and running. Configure to your like.
     Check under SETTINGS, RELAY if Relays are up and running. Configure to your like.
     Check under SETTINGS, I/O if analog Inputs are up and running. Configure to your like.
-        Picture [Front...](Pictures/Test_Carrier_Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
+        Picture [Front...](Pictures/TestRevision/Test_Carrier_Front.jpg)  shows a connected LM331 on Channel 0:4, activate and check the Device list for working temperature).
 
 
 **finish**
@@ -76,8 +76,7 @@ Special Thanks to Rob Duthie who helped to get the Analog Inputs working. See.. 
 <br>  
 
 > [!NOTE]
-> The RpiVenusCarrier has been tested with an old single can version of the HW carrier board hw3.9, temporarily soldered a second Waveshare RS485 CAN HAT to SPI1-0. See here [Back...](Pictures/Test_Carrier_back.jpg).  
-> Final Version hw5.4 will have mcp2518FD on board and requires different overlay and setting in config.txt.  
+> The RpiVenusCarrier has been tested with the current Version HW 5.4. This Version is having two mcp2518FD CAN controller on board.  
 <br>
 <br>
 
