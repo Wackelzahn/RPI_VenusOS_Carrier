@@ -2,8 +2,8 @@
 <br>
   
 > [!WARNING]
-> All files provided in this Repositorie were tested to work with the RpiVenusCarrier (Testversion).  
-> The files may not work on other HW environments.
+> All files provided in this Repositorie were tested to work with the RpiVenusCarrier HW revision 5.4.  
+> The setup process may not work on other HW environments.
 <br>
 
 ## Configuration
@@ -35,7 +35,7 @@
     ```
     /data/RpiVenusCarrier/RpiVenusCarrierSetup.sh
     ```
-16) After the completion of the script, RPI will reboot. You may check the log file `/etc/venus/RpiVenusCarrierLog.txt`
+16) After the completion of the script, RPI will reboot. You may check the log file `/data/RpiVenusCarrier/Log/RpiVenusCarrierLog.txt`
 17) Finish!  
 20) You may check the functionality.
     Reconnect via ssh. Check with the command if both can0 and can1 are running.
@@ -62,8 +62,8 @@
 > Also the `root` PW is being reset! It is therfore recommended to install ssh keys (which will be retained) for authentication and access to your Venus machine.
 
 ### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier[^1]
-- none, the configuration is re-written automatically through `/data/rc.local` and the machine is once rebooting.
-- <br>   
+- none, the configuration is re-written automatically through `/data/rc.local` and the machine is rebooting once more after FW update completion.
+<br>   
 **finish**  
 <br> 
 
@@ -84,7 +84,7 @@ Special Thanks to Rob Duthie who helped to get the Analog Inputs working. See.. 
 ## ToDo  
 - [ ] uninstall script :)
 - [X] Gerber file upload of new HW revision 5.4.
-- [ ] Manufacture, test and update README according new can interface mcp2518FD.
+- [X] Manufacture, test and update README according new can interface mcp2518FD.
 
 
 
