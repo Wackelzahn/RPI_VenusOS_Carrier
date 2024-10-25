@@ -62,13 +62,13 @@
 > Also the `root` PW is being reset! It is therfore recommended to install ssh keys (which will be retained) for authentication and access to your Venus machine.
 
 ### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier[^1]
-- none, the configuration is re-written automatically through `/data/rc.local` and the machine is rebooting once more after FW update completion.
+- None. The configuration is re-written automatically through `/data/rc.local` and the machine is rebooting once more after FW update completion.
 <br>   
 **finish**  
 <br> 
 
 ## Issues  
-- By trial and error it was found that dtoverlay=spi1-1cs (to select only one CS on spi1) is for some reason not working. Interface can1 is only recognized on CS0 with all three CS activated -> spi1-3cs (which makes use also for GPIO16 and GPIO17 and those pins are therefore not usable (unless you have another SPI device connected) for other GPIO purposes any more.  
+- Through trial and error, it was found that the dtoverlay=spi1-1cs configuration (intended to select only one chip select (CS) line on SPI1) does not work as expected. The CAN interface (can1) is only recognized on CS0 when all three CS lines are activated using dtoverlay=spi1-3cs. This setup also utilizes GPIO16 and GPIO17, rendering these pins unusable for other GPIO purposes unless another SPI device is connected.
 <br>
 
 ## Thank you  
