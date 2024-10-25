@@ -88,5 +88,5 @@ Special Thanks to Rob Duthie who helped to get the Analog Inputs working. See.. 
 
 
 
-[^1]: There are quite some discussions in various forums on how to implement proper data/setting retention after a re-start/firmware update. For the RpiVenusCarrier solution, this guide from Victron was followed [link](https://www.victronenergy.com/live/ccgx:root_access) It is important to note that after a FW-update the rootfs partition is read only. You may only write/copy/remove/configure through `/data/rc.local` once you have regained writing rights. 
+[^1]: There are quite some discussions in various forums on how to implement proper data/setting retention after a re-start/firmware update. For the RpiVenusCarrier solution, this guide from Victron was followed [link](https://www.victronenergy.com/live/ccgx:root_access) It is important to note that after a FW-update the rootfs partition is read only and your automatic script fail's to write. You may only write/copy/remove/configure through `/data/rc.local` once you have regained writing rights. See 
 
