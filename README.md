@@ -61,8 +61,9 @@
 > All files are deleted after a Firmware update of Venus OS, except the ones on `/data`.
 > Also the `root` PW is being reset! It is therfore recommended to install ssh keys (which will be retained) for authentication and access to your Venus machine.
 
-### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier[^1]
+### Steps to be done after FW update to regain all functionality of the RpiVenusCarrier
 - None. The configuration is re-written automatically through `/data/rc.local` and the machine is rebooting once more after FW update completion.
+- There are quite some discussions in various forums on how to implement proper data/setting retention after a re-start/firmware update. For the RpiVenusCarrier solution, this guide from Victron was followed [link](https://www.victronenergy.com/live/ccgx:root_access) It is important to note that after a FW-update the rootfs partition is read only and your automatic script fail's to write. You may only write/copy/remove/configure through `/data/rc.local` once you have regained writing rights. See [link](RpiVenusCarrier/Files/rc.local) Line 19.
 <br>   
 **finish**  
 <br> 
@@ -88,5 +89,4 @@ Special Thanks to Rob Duthie who helped to get the Analog Inputs working. See.. 
 
 
 
-[^1]: There are quite some discussions in various forums on how to implement proper data/setting retention after a re-start/firmware update. For the RpiVenusCarrier solution, this guide from Victron was followed [link](https://www.victronenergy.com/live/ccgx:root_access) It is important to note that after a FW-update the rootfs partition is read only and your automatic script fail's to write. You may only write/copy/remove/configure through `/data/rc.local` once you have regained writing rights. See 
 
